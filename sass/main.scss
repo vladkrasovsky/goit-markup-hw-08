@@ -1,40 +1,4 @@
-// Utils section
-@import './utils/vars';
-@import './utils/placeholders';
-@import './utils/visually-hidden';
-@import './utils/link';
-@import './utils/text-accent';
-
-// Base section
-@import './base/modern-normalize';
-@import './base/forms/form-field';
-@import './base/forms/input';
-@import './base/forms/checkbox';
-@import './base/common';
-
-// Components section
-@import './components/backdrop';
-@import './components/benefit';
-@import './components/button';
-@import './components/card';
-@import './components/clients-list';
-@import './components/data-form';
-@import './components/filter';
-@import './components/grid';
-@import './components/logo';
-@import './components/main-contacts';
-@import './components/modal';
-@import './components/nav';
-@import './components/product';
-@import './components/socials-list';
-@import './components/subscription-form';
-@import './components/work-list';
-// Layout components (should always stay at the bottom)
-@import './components/layout/page-header';
-@import './components/layout/hero';
-@import './components/layout/benefits';
-@import './components/layout/work';
-@import './components/layout/team';
-@import './components/layout/clients';
-@import './components/layout/portflolio';
-@import './components/layout/page-footer';
+@import './utils/index';
+@import './base/index';
+@import './components/index';
+@import './layout/index'; // should always stay at the bottom
