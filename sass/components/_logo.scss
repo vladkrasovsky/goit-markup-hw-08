@@ -1,0 +1,30 @@
+// Logo
+
+.logo {
+  display: inline-flex;
+
+  font-family: $font-secondary;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: $letter-spacing-default;
+
+  user-select: none;
+}
+
+// logo variants
+.logo--dark {
+  &,
+  &:hover,
+  &:focus {
+    color: $logo-color-dark;
+  }
+}
+
+.logo--light {
+  &,
+  &:hover,
+  &:focus {
+    color: $logo-color-light;
+  }
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио | WebStudio</title>
+    <meta name="description" content="Эффективные решения для вашего бизнеса" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header page-header--fixed" data-page-header>
+      <div class="page-header__wrap">
+        <a class="link logo logo--dark page-header__logo" href="./index.html">
+          <span class="text-accent">Web</span>Studio
+        </a>
+        <nav class="page-header__menu">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="link link--dark nav__link" href="./index.html">Студия</a>
+            </li>
+
+            <li class="nav__item nav__item--current">
+              <a class="link link--dark nav__link" href="./portfolio.html"> Портфолио </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="link link--dark nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav page-header__contacts">
+          <li class="nav__item">
+            <a class="link nav__link" href="mailto:info@devstudio.com">
+              <svg class="nav__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="link nav__link" href="tel:+380961111111">
+              <svg class="nav__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone" />
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="portfolio__wrap">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter filter--centered portfolio__filter">
+            <li class="filter__item filter__item--current">
+              <button class="button button--small" type="button">Все</button>
+            </li>
+
+            <li class="filter__item">
+              <button class="button button--small" type="button">Веб-сайты</button>
+            </li>
+
+            <li class="filter__item">
+              <button class="button button--small" type="button">Приложения</button>
+            </li>
+
+            <li class="filter__item">
+              <button class="button button--small" type="button">Дизайн</button>
+            </li>
+
+            <li class="filter__item">
+              <button class="button button--small" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="grid grid--3">
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-01.jpeg"
+                    width="370"
+                    alt="Мокап на ноутбуке"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Технокряк это современная площадка распространения коронавируса. Компании
+                      используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Технокряк</h2>
+                  <p class="product__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-02.jpeg"
+                    width="370"
+                    alt="Два баскетболиста"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Легендарный матч New Orlean vs Golden Star который никогда не мог закончиться
+                      из-за короновируса.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="product__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-03.jpeg"
+                    width="370"
+                    alt="Логотип ресторана Seafood"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Удивительный ресторан в котором вы сможете попробовать лосося который носил
+                      маску во время нереста, приготовленного в собственном соку.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Ресторан Seafood</h2>
+                  <p class="product__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-04.jpeg"
+                    width="370"
+                    alt="Большие наушники"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Проект Prime, это проект наушников специально сделаных черными,что бы музыка
+                      была толерантна афроамериканским исполнителям. Басс в этих наушниках
+                      настраивается сам.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Проект Prime</h2>
+                  <p class="product__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-05.jpeg"
+                    width="370"
+                    alt="Упаковочные коробки"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      На этой картинке можно заметить 2 коробочки, которые стоят нереально ровно
+                      друг к другу и символизируют единение, девиз этих коробочек "Мы разные, но
+                      внутри такие одинаково пустые!"
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Проект Boxes</h2>
+                  <p class="product__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-06.jpeg"
+                    width="370"
+                    alt="Мокап на десктопе"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Веб-сайт в котором вы сможете видеть распространение коронавируса, в каких
+                      странах и на каком месте сидит бактерия короновируса у человека.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Inspiration has no Borders</h2>
+                  <p class="product__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-07.jpeg"
+                    width="370"
+                    alt="Дизайн открытого журнала"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Книга-инструкция, которая говорит о том как правильно сушить волосы и ходить с
+                      подругами и подымая руки одновременно и показывать что 2 пальца могут быть
+                      раздельно.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Издание Limited Edition</h2>
+                  <p class="product__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-08.jpeg"
+                    width="370"
+                    alt="Мокап бирки"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Проект LAB - мы продаём навязные на любую поверхность и плоскость дизайнерские
+                      бирки помогающие не забыть что значит каждая ваша вещь дома! LAB - клади и
+                      помни!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Проект LAB</h2>
+                  <p class="product__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid__item portfolio__item">
+              <a class="link product" href="">
+                <div class="product__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-09.jpeg"
+                    width="370"
+                    alt="Работа за ноутбуком"
+                  />
+                  <div class="product__overlay">
+                    <p class="product__text">
+                      Growing Business - приложение которое сможет дать вам понять в каком состоянии
+                      ваш бизнес, даже если вы не занимаетесь бизнесом.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="product__content">
+                  <h2 class="product__title">Growing Business</h2>
+                  <p class="product__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <div class="page-footer__item">
+          <a class="link logo logo--light page-footer__logo" href="./index.html">
+            <span class="text-accent">Web</span>Studio
+          </a>
+          <address class="main-contacts">
+            <ul class="main-contacts__list">
+              <li class="main-contacts__item">
+                <a
+                  class="link link--light main-contacts__link"
+                  href="https://goo.gl/maps/hceQhMATqFWJa5X66"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+
+              <li class="main-contacts__item">
+                <a class="link main-contacts__link" href="mailto:info@example.com">
+                  info@example.com
+                </a>
+              </li>
+
+              <li class="main-contacts__item">
+                <a class="link main-contacts__link" href="tel:+380991111111"> +38 099 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="page-footer__item">
+          <p class="page-footer__title">Присоединяйтесь</p>
+          <ul class="socials-list">
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--light"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                title="Instagram"
+                aria-label="Instagram"
+              >
+                <svg class="socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--light"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                title="Twitter"
+                aria-label="Twitter"
+              >
+                <svg class="socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--light"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                title="Facebook"
+                aria-label="Facebook"
+              >
+                <svg class="socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--light"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <svg class="socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__item page-footer__item--subscription">
+          <p class="page-footer__title">Подпишитесь на рассылку</p>
+          <form class="js-speaker-form subscription-form">
+            <label class="form-field subscription-form__field">
+              <input
+                class="input input--large input--light form-field__input subscription-form__input"
+                type="email"
+                name="email"
+                placeholder=" "
+                required
+              />
+              <span class="form-field__label subscription-form__label">E-mail</span>
+            </label>
+            <button class="button button--accent" type="submit">
+              <span class="button__label">Подписаться</span>
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+%container {
+  width: $container-width;
+  padding-left: calc($grid-gap / 2);
+  padding-right: calc($grid-gap / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+%section {
+  padding-bottom: $section-padding;
+  padding-top: $section-padding;
+}
+
+%section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  font-size: 36px;
+  line-height: 1.16;
+  color: $text-color-dark;
+  letter-spacing: $letter-spacing-default;
+  text-align: center;
+}

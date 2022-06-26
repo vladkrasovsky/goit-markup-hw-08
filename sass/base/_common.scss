@@ -1,0 +1,13 @@
+// Common
+
+body {
+  min-width: $container-width; /* fixed layout width */
+  padding-top: $header-height; /* fallback if js not loaded */
+
+  font-family: $font-default;
+  font-size: $font-size-default;
+  letter-spacing: $letter-spacing-default;
+  color: $text-color;
+
+  background-color: $main-bg;
+}

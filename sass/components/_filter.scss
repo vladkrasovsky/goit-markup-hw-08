@@ -1,0 +1,16 @@
+// Filter
+
+.filter {
+  @extend %list;
+
+  display: flex;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+// filter variants
+.filter--centered {
+  justify-content: center;
+}

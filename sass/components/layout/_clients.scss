@@ -1,0 +1,13 @@
+// Clients
+
+.clients {
+  @extend %section;
+}
+
+.clients__wrap {
+  @extend %container;
+}
+
+.clients__title {
+  @extend %section-title;
+}
