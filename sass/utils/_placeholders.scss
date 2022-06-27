@@ -1,9 +1,20 @@
 %container {
-  width: $container-width;
   padding-left: calc($grid-gap / 2);
   padding-right: calc($grid-gap / 2);
   margin-left: auto;
   margin-right: auto;
+
+  @include mobile {
+    width: $breakpoint-mobile;
+  }
+
+  @include tablet {
+    width: $breakpoint-tablet;
+  }
+
+  @include desktop {
+    width: $breakpoint-desktop;
+  }
 }
 
 %image {

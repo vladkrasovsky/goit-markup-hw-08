@@ -1,9 +1,23 @@
 .page-footer__wrap, .portfolio__wrap, .clients__wrap, .team__wrap, .work__wrap, .benefits__wrap, .hero__wrap, .page-header__wrap {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .page-footer__wrap, .portfolio__wrap, .clients__wrap, .team__wrap, .work__wrap, .benefits__wrap, .hero__wrap, .page-header__wrap {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-footer__wrap, .portfolio__wrap, .clients__wrap, .team__wrap, .work__wrap, .benefits__wrap, .hero__wrap, .page-header__wrap {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__wrap, .portfolio__wrap, .clients__wrap, .team__wrap, .work__wrap, .benefits__wrap, .hero__wrap, .page-header__wrap {
+    width: 1200px;
+  }
 }
 
 .portfolio__image, .work-list__image, .card__image {
@@ -563,8 +577,7 @@ summary {
 }
 
 body {
-  min-width: 1200px;
-  /* fixed layout width */
+  min-width: 320px;
   padding-top: 80px;
   /* fallback if js not loaded */
   font-family: "Roboto", sans-serif;
