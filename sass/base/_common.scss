@@ -1,7 +1,7 @@
 // Common
 
 body {
-  min-width: $container-width; /* fixed layout width */
+  min-width: 320px;
   padding-top: $header-height; /* fallback if js not loaded */
 
   font-family: $font-default;
