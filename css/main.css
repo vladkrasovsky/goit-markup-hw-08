@@ -3,6 +3,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /*overflow: hidden;*/
 }
 @media screen and (min-width: 480px) {
   .page-footer__wrap, .portfolio__wrap, .clients__wrap, .team__wrap, .work__wrap, .benefits__wrap, .hero__wrap, .page-header__wrap {
@@ -1292,12 +1293,9 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 400px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   text-align: center;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg.jpeg");
@@ -1306,16 +1304,37 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
   margin-top: 0;
+  font-size: 21px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits {

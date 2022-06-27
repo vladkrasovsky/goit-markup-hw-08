@@ -1,12 +1,9 @@
 // Hero
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 400px;
+  padding-bottom: 118px;
+  padding-top: 118px;
 
   text-align: center;
 
@@ -16,6 +13,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include desktop {
+    min-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .hero__wrap {
@@ -26,10 +32,15 @@
   margin-bottom: 30px;
   margin-top: 0;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: $letter-spacing-lg;
-  text-transform: uppercase;
+  @include font(21px, 1.62, 900, $letter-spacing-lg);
   color: $text-color-light;
+  text-transform: uppercase;
+
+  @include mobile {
+    @include font(26px);
+  }
+
+  @include desktop {
+    @include font(44px, 1.36);
+  }
 }
