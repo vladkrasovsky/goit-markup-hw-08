@@ -16,3 +16,11 @@
     @content;
   }
 }
+
+// Typography
+@mixin font($fs: null, $lh: null, $fw: null, $ls: null) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
