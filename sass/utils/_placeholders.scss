@@ -40,12 +40,18 @@
 }
 
 %section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
 
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: $text-color-dark;
   letter-spacing: $letter-spacing-default;
   text-align: center;
+
+  @include desktop {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }

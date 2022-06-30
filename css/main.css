@@ -44,13 +44,19 @@
 }
 
 .clients__title, .team__title, .work__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: #212121;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title, .team__title, .work__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .visually-hidden {
