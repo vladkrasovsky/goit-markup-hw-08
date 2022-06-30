@@ -27,10 +27,12 @@
   }
 
   &--subscription {
-    margin-left: auto;
-
     @include desktop-max {
       flex-basis: 100%;
+    }
+
+    @include desktop {
+      margin-left: auto;
     }
   }
 }

@@ -1566,13 +1566,15 @@ body {
     text-align: center;
   }
 }
-.page-footer__item--subscription {
-  margin-left: auto;
-}
 @media screen and (max-width: 1199px) {
   .page-footer__item--subscription {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__item--subscription {
+    margin-left: auto;
   }
 }
 
