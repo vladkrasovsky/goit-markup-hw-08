@@ -33,6 +33,7 @@
 
 .card__image {
   @extend %image;
+  width: 100%;
 }
 
 // card variants

@@ -749,6 +749,10 @@ body {
   margin-bottom: 16px;
 }
 
+.card__image {
+  width: 100%;
+}
+
 .card--centered {
   text-align: center;
 }
