@@ -1360,22 +1360,30 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.subscription-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subscription-form__field {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  width: 450px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.subscription-form__input {
-  width: 358px;
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscription-form__field {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .subscription-form__label {
@@ -1522,17 +1530,49 @@ body {
   background-color: #2f303a;
 }
 
-.page-footer__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .page-footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-footer__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
-.page-footer__item:not(:last-child) {
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .page-footer__item {
+    text-align: center;
+  }
+}
+.page-footer__item--subscription {
+  margin-left: auto;
+}
+@media screen and (max-width: 1199px) {
+  .page-footer__item--subscription {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .page-footer__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__item:not(:last-child) {
+    margin-right: 70px;
+  }
 }
 
 .page-footer__logo {
@@ -1551,6 +1591,10 @@ body {
   text-transform: uppercase;
 }
 
-.page-footer__item--subscription {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .page-footer__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

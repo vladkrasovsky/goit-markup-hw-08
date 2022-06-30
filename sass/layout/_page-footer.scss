@@ -10,12 +10,39 @@
 .page-footer__wrap {
   @extend %container;
 
-  display: flex;
-  align-items: baseline;
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @include desktop-max {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.page-footer__item {
+  @include desktop-max {
+    text-align: center;
+  }
+
+  &--subscription {
+    margin-left: auto;
+
+    @include desktop-max {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .page-footer__item:not(:last-child) {
-  margin-right: 70px;
+  @include desktop-max {
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-right: 70px;
+  }
 }
 
 .page-footer__logo {
@@ -36,6 +63,8 @@
   text-transform: uppercase;
 }
 
-.page-footer__item--subscription {
-  margin-left: auto;
+.page-footer__socials {
+  @include desktop-max {
+    justify-content: center;
+  }
 }
