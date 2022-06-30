@@ -21,5 +21,15 @@
     .grid--#{$i} > & {
       flex-basis: calc(100% / $i - $grid-gap);
     }
+    .grid--tablet-#{$i} > & {
+      @include tablet {
+        flex-basis: calc(100% / $i - $grid-gap);
+      }
+    }
+    .grid--desktop-#{$i} > & {
+      @include desktop {
+        flex-basis: calc(100% / $i - $grid-gap);
+      }
+    }
   }
 }
