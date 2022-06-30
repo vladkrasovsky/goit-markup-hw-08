@@ -33,8 +33,14 @@
 }
 
 .portfolio, .clients, .team, .work, .benefits {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .clients, .team, .work, .benefits {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__title, .team__title, .work__title {
@@ -1480,8 +1486,10 @@ body {
   }
 }
 
-.benefits {
-  padding-bottom: 47px;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 30px;
+  }
 }
 
 .work {
@@ -1490,7 +1498,7 @@ body {
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
-    padding-top: 47px;
+    padding-top: 30px;
   }
 }
 

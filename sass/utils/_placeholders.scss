@@ -32,6 +32,11 @@
 %section {
   padding-bottom: $section-padding;
   padding-top: $section-padding;
+
+  @include desktop {
+    padding-bottom: $section-padding-desktop;
+    padding-top: $section-padding-desktop;
+  }
 }
 
 %section-title {

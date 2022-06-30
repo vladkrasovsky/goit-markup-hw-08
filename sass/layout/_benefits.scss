@@ -3,7 +3,9 @@
 .benefits {
   @extend %section;
 
-  padding-bottom: calc($section-padding / 2);
+  @include desktop {
+    padding-bottom: calc($section-padding / 2);
+  }
 }
 
 .benefits__wrap {
