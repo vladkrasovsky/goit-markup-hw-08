@@ -4,12 +4,17 @@
   display: inline-flex;
 
   font-family: $font-secondary;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: $letter-spacing-default;
 
   user-select: none;
+
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 // logo variants
