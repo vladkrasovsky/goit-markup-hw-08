@@ -1,10 +1,15 @@
 // Page header
 
 .page-header {
-  min-height: $header-height;
+  display: flex;
+  height: $header-height-mobile;
 
   background-color: $header-bg;
   border-bottom: 1px solid $header-border-color;
+
+  @include tablet {
+    height: $header-height;
+  }
 }
 
 .page-header__wrap {
@@ -19,12 +24,31 @@
   align-items: center;
 }
 
+.page-header__menu-toggle {
+  margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.page-header__menu,
+.page-header__contacts {
+  @include tablet-max {
+    display: none;
+  }
+}
+
 .page-header__menu {
   margin-left: 93px;
 }
 
 .page-header__contacts {
   margin-left: auto;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 // page-header variants

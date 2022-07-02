@@ -1,0 +1,34 @@
+// Contacts
+
+.contacts {
+  @extend %list;
+}
+
+.contacts__item:not(:last-child) {
+  @include desktop-max {
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    margin-right: 50px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  @include font(12px, calc(14 / 12), 500, $letter-spacing-sm);
+
+  @include desktop {
+    padding-bottom: $header-padding;
+    padding-top: $header-padding;
+
+    @include font(14px, calc(16 / 14));
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
