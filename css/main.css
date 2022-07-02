@@ -1516,15 +1516,21 @@ body {
 }
 
 .product__text {
-  bottom: 63px;
-  top: 63px;
+  top: 50%;
   left: 24px;
   right: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0;
-  font-size: 18px;
+  font-size: 4.65vw;
   line-height: 1.56;
   color: #ffffff;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .product__text {
+    font-size: 18px;
+  }
 }
 
 .product__content {

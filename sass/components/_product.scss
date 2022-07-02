@@ -52,18 +52,25 @@
   $offsetY: 63px;
   $offsetX: 24px;
 
-  bottom: $offsetY;
-  top: $offsetY;
+  top: 50%;
   left: $offsetX;
   right: $offsetX;
+  transform: translateY(-50%);
 
   margin: 0;
 
-  font-size: 18px;
+  font-size: 4.65vw;
   line-height: 1.56;
   color: $text-color-light;
 
   overflow: hidden;
+
+  @include mobile-max {
+  }
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .product__content {
