@@ -25,7 +25,10 @@
 }
 
 .page-header__menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
   margin-left: auto;
+  transform: translateX(8px);
 
   @include tablet {
     display: none;
