@@ -12,12 +12,17 @@
 
   overflow-x: hidden;
   overflow-y: auto;
+
+  @include tablet-max {
+    padding-left: $grid-gap / 2;
+    padding-right: $grid-gap / 2;
+  }
 }
 
 .modal__dialog {
   position: relative;
 
-  width: 528px;
+  width: 450px;
   max-width: 100%;
   min-height: 580px;
   margin: auto;
@@ -34,6 +39,15 @@
   transition-property: transform, opacity;
   transition-duration: $transition-base-time;
   transition-timing-function: $transition-base-animation;
+
+  @include mobile-max {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include desktop {
+    width: 528px;
+  }
 
   .backdrop--hidden & {
     opacity: 0;
@@ -92,6 +106,7 @@
 .modal__link {
   color: $accent-color;
   text-decoration: underline;
+  white-space: nowrap;
 
   &:hover,
   &:focus {

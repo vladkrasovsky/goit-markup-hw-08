@@ -6,3 +6,9 @@
 .data-form__comment {
   margin-bottom: 20px;
 }
+
+.data-form__accept {
+  @include desktop-max {
+    font-size: 12px;
+  }
+}
