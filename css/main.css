@@ -25,6 +25,8 @@
   display: block;
   max-width: 100%;
   height: auto;
+  text-align: center;
+  background-color: #eeeeee;
 }
 
 .socials-list, .nav, .mobile-menu__item, .main-contacts__list, .grid, .filter, .contacts {
@@ -1473,8 +1475,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
