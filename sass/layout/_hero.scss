@@ -1,6 +1,8 @@
 // Hero
 
 .hero {
+  $bg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
   min-height: 400px;
   padding-bottom: 118px;
   padding-top: 118px;
@@ -8,11 +10,22 @@
   text-align: center;
 
   background-color: $section-bg-dark;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-bg.jpeg');
+  background-image: $bg-gradient, url('../images/mobile/hero-bg.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include retina {
+    background-image: $bg-gradient, url('../images/mobile/hero-bg@2x.jpeg');
+  }
+
+  @include tablet {
+    background-image: $bg-gradient, url('../images/tablet/hero-bg.jpeg');
+
+    @include retina {
+      background-image: $bg-gradient, url('../images/tablet/hero-bg@2x.jpeg');
+    }
+  }
 
   @include desktop {
     min-height: 600px;
@@ -21,6 +34,12 @@
     margin-right: auto;
     padding-bottom: 200px;
     padding-top: 200px;
+
+    background-image: $bg-gradient, url('../images/desktop/hero-bg.jpeg');
+
+    @include retina {
+      background-image: $bg-gradient, url('../images/desktop/hero-bg@2x.jpeg');
+    }
   }
 }
 
