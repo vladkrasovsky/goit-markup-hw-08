@@ -5,9 +5,14 @@
   };
 
   // padding for fixed header
-  if (refs.header.classList.contains('page-header--fixed')) {
-    const { height: headerHeight } = refs.header.getBoundingClientRect();
-    document.body.style.paddingTop = `${headerHeight}px`;
+  setPadding();
+  window.addEventListener('resize', setPadding);
+
+  function setPadding() {
+    if (refs.header.classList.contains('page-header--fixed')) {
+      const { height: headerHeight } = refs.header.getBoundingClientRect();
+      document.body.style.paddingTop = `${headerHeight}px`;
+    }
   }
 
   // forms submit handler
