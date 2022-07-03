@@ -14,5 +14,7 @@
 
 // filter variants
 .filter--centered {
-  justify-content: center;
+  @include tablet {
+    justify-content: center;
+  }
 }
